@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS VARIABLES */
+
+:root {
+  --base-color: "#272640";
+  --font-size: "7rem";
+  --h3--: "30px";
+  --all-users-color: "#FF19C2";
+  --male-users-color: "#12B5AA";
+  --female-users-color: "#7016BF";
+  --btn-color: "#7016BF";
+  --input-color: "#202124";
+  --color-expand: "#0CC2B0";
+  --font: "Poppins", sans-serif;
+}
+html {
+  line-height: 1.2;
+  font-family: var(--font);
+}
+body {
+  background: var(--base-color);
+  color: aliceblue;
+  font-size: var(--font-size) !important;
+  position: relative;
+}
+h3,
+h2 {
+  font-size: 1.7em;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--font) !important;
+}
+h2 {
+  font-size: 3rem;
+}
+h5 {
+  padding: 3rem 0;
+  font-weight: 300;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}
+.header-left {
+  padding: 10rem 10rem 0 0;
+  margin: 0 0 0 7rem;
+}
+
+.span-text {
+  font-weight: 100;
+}
+p {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #babbbe;
+  padding: 0 0 2rem 0;
+}
+
+.input-type {
+  width: 400px;
+  height: 47px;
+  border-radius: 7px;
+  background-color: #4c4c57;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  box-sizing: border-box;
+}
+input::placeholder {
+  color: aliceblue;
+  padding: 0 3rem;
+  font-family: var(--font);
+  font-weight: 200 !important;
+}
+
+/* Show Users */
+
+.user-wrap {
+  display: flex;
+  margin-top: -2rem;
+}
+.user-wrap p {
+  font-size: 10px;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.user {
+  margin: 0 1rem 0 0;
+}
+.all-users,
+.male-users,
+.female-users {
+  height: 90px;
+  width: 100px;
+  border-radius: 7px;
+  color: black;
+  scale: 0.5;
+}
+.all-users,
+.female-users,
+.male-users {
+  background-color: #ff19c2;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.male-users {
+  background-color: #12b5aa;
+}
+.female-users {
+  background-color: #7016bf;
+}
+.i {
+  padding: 3rem;
+}
+.header-right-wrap {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 13px;
+  padding-right: 0;
+  color: #4c4c57;
+  max-width: 1000px;
+  margin: 1rem;
+}
+.find-in-list,
+.country {
+  background-color: #f0efeb;
+  border: none;
+  border-radius: 50px;
+  height: 42px;
+  margin: -1rem 1rem 0 0;
+}
+.find-in-list {
+  width: 300px;
+}
+.country {
+  width: 100px;
+}
+.input-wrap {
+  display: flex;
+}
+.toggle-icon {
+  font-size: 35px;
+  padding: 0.8rem 0 0 0;
+}
+.toggle {
+  color: #12b5aa;
+}
+.toggle-span {
+  font-size: 13px;
+}
+.user-profile {
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding: 1rem 1rem 0 1rem;
+  margin-right: 3rem;
+  border-radius: 7px;
+}
+.user-profile-image {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  padding: 2rem 0 0 0;
+  border-radius: 100px;
+  border: 3px solid #12b5aa;
+}
+.user-caption {
+  margin-left: 2rem;
+}
+.user-profile-1 {
+  display: flex;
+}
+.user-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrap {
+  display: flex;
+  margin-top: -2rem;
+  justify-content: space-around;
+  height: 35px;
+}
+.phone {
+  margin-right: 4rem;
+}
+.user-control {
+  height: 30px;
+  width: 40px;
+  background-color: rgb(18, 181, 170);
+  border-radius: 7px;
+  box-shadow: rgb(18, 181, 170) 0px 20px 30px -10px;
+  margin: -0.6rem 0 0 0;
+  color: #fff;
+  position: relative;
+}
+.arrow,
+.chevron {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.caption {
+  font-size: 12px;
+}
+.address {
+  color: #4c4c57;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  background: #7016bf;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  color: #fff;
+  margin: 1.5rem 0 0 0;
+}
+.cloud {
+  padding: 0 2rem 0 0;
+}
+.button-next {
+  display: flex;
+  position: relative;
+}
+.icon-next {
+  position: absolute;
+  top: 70%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+}
+.left-chevron {
+  margin-right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.397) 0px 20px 30px -10px;
+  background: #e5e5e9;
+}
+.right-chevron {
+  box-shadow: rgba(0, 0, 0, 0.397) 0px 20px 30px -10px;
+  background: #000;
+}
