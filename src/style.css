@@ -81,7 +81,9 @@ input::placeholder {
   font-family: var(--font);
   font-weight: 200 !important;
 }
-
+input:focus{
+    outline: none;
+}
 /* Show Users */
 
 .user-wrap {
